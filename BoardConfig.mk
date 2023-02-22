@@ -56,10 +56,10 @@ TARGET_IS_64_BIT := false                      # true/false: Determine if the de
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/zImage
 TARGET_PREBUILT_RECOVERY_KERNEL := $(LOCAL_PATH)/prebuilt/zImage
 # Get the CMDLine, Base, Pagesize and offsets from Unpacked recovery image and put below
-BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 androidboot.selinux=permissive
-BOARD_KERNEL_BASE := 0x40078000
+BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,32N2 buildvariant=user veritykeyid=id:7e4333f9bba00adfe0ede979e28ed1920492b40f
+BOARD_KERNEL_BASE := 0x40000000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x03f88000 --tags_offset 0x0df88000
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x15000000 --tags_offset 0x14000000
 
 # Set FSTAB
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/root/etc/recovery.fstab
