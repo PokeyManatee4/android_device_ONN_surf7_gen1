@@ -53,7 +53,7 @@ deploy:
     branch: master
 branches:
   only:
-    - master
+    - main
   except:
     - /^(?i:untagged)-.*$/
     - /^v\d+\.\d+(\.\d+)?(-\S*)?$/
