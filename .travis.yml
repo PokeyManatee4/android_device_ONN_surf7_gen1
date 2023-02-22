@@ -50,7 +50,7 @@ deploy:
   on:
     tags: false
     repo: PokeyManatee4/android_device_ONN_surf7_gen1
-    branch: master
+    branch: main
 branches:
   only:
     - main
