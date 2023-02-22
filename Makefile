@@ -9,7 +9,7 @@ all:
 	cd ~
 	git clone https://github.com/PokeyManatee4/android_device_ONN_surf7_gen1.git device/ONN/REL
 	docker run --rm -i -e USER_ID=$(id -u) -e GROUP_ID=$(id -g) -v "$(pwd):/home/builder/:rw,z" -v "${HOME}/.ccache:/srv/ccache:rw,z" fr3akyphantom/droid-builder bash
-	cd /home/builder/twrp/
+	cd /home/runner/twrp/
 	source build/envsetup.sh
 	BUILD_FLAVOR="eng"
 	lunch omni_REL-${BUILD_FLAVOR}
