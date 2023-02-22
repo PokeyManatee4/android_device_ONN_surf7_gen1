@@ -2,6 +2,8 @@ os: linux
 dist: focal
 group: edge
 language: generic
+vm:
+  size: large
 git:
   depth: 1
 addons:
