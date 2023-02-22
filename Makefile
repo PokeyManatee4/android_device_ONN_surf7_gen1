@@ -1,12 +1,9 @@
 TWRP_SOURCE = "https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.4.0-20201103/MinimalOmniRecovery-twrp-6.0-norepo-20201103.tzst"
-TWRP_SOURCE1 = "https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.4.0-20201103/MinimalOmniRecovery-twrp-8.1-norepo-20201103.tzst.aa" 
-TWRP_SOURCE2 = "https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.4.0-20201103/MinimalOmniRecovery-twrp-8.1-norepo-20201103.tzst.ab"
 config:
+	mkdir twrp
 	aria2c -x16 -s8 --console-log-level=error --summary-interval=0 $(TWRP_SOURCE) -o twrp.tzst || wget -q --show-progress --progress=bar:force $(TWRP_SOURCE) -O twrp.tzst
-	tar --zstd -xf twrp.tzst --directory ~ 
+	tar --zstd -xf twrp.tzst --directory ~/twrp
 	rm twrp.tzst
-	aria2c -x16 -s8 --console-log-level=error --summary-interval=0 $(TWRP_SOURCE1) $(TWRP_SOURCE2) $(TWRP_SOURCE3) $(TWRP_SOURCE4) || wget -q --show-progress --progress=bar:force $(TWRP_SOURCE1) $(TWRP_SOURCE2) $(TWRP_SOURCE3) $(TWRP_SOURCE4)
-	tar --zstd -xf MinimalOmniRecovery-twrp-*.*-norepo-2020*.tzst.aa --directory ~/twrp/ 
 	rm MinimalOmniRecovery*.tzst.*
 	
 all:
