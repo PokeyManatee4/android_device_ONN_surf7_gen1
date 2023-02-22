@@ -4,7 +4,6 @@ config:
 	aria2c -x16 -s8 --console-log-level=error --summary-interval=0 $(TWRP_SOURCE) -o twrp.tzst || wget -q --show-progress --progress=bar:force $(TWRP_SOURCE) -O twrp.tzst
 	tar --zstd -xf twrp.tzst --directory ~/twrp
 	rm twrp.tzst
-	rm MinimalOmniRecovery*.tzst.*
 	
 all:
 	cd ~
