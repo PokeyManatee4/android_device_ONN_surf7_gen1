@@ -6,6 +6,5 @@ config:
 	
 all:
 	git clone https://github.com/PokeyManatee4/android_device_ONN_surf7_gen1.git device/ONN/REL
-	docker run --rm -i -e USER_ID=$(id -u) -e GROUP_ID=$(id -g) -v "$(pwd):/home/builder/:rw,z" -v "${HOME}/.ccache:/srv/ccache:rw,z" fr3akyphantom/droid-builder bash
 	chmod +x docker.sh
 	./docker.sh
