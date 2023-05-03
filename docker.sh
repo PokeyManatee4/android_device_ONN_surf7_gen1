@@ -1,5 +1,6 @@
 #!/bin/bash
-cd ~/twrp/ 
+
+cd ~/twrp
 source build/envsetup.sh
 lunch &
 lunch omni_ONN-eng
