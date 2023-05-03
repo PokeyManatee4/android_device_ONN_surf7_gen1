@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     name: Custom TWRP
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     container: fr3akyphantom/droid-builder:latest
 
     steps:
