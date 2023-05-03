@@ -7,15 +7,12 @@ on:
 
 jobs:
   build:
-
     name: Custom TWRP
     runs-on: ubuntu-20.04
     container: fr3akyphantom/droid-builder:latest
 
     steps:
     - uses: actions/checkout@v3
-      with:
-        submodules: true
 
     - name: Build
       run: make config & make all
