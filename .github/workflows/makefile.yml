@@ -13,17 +13,14 @@ jobs:
     container: fr3akyphantom/droid-builder:latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       with:
         submodules: true
-
-
-
 
     - name: Build
       run: make config & make all
 
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3
       with:
         name: Recovery
         path: ~/out
