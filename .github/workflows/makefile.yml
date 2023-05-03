@@ -12,12 +12,15 @@ jobs:
       options: --user 1001
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
+    - name: Config
+      run: make config && chmod +x docker.sh
+    
     - name: Build
-      run: make config && make all
+      run: ./docker.sh
 
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3
       with:
         name: Recovery
         path: ~/out
