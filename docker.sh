@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Starting"
-mkdir ~/.repo/local_manifests
+mkdir ~/.repo/local_manifests -r
 cd ~/twrp
 echo "Sourcing"
 source ~/twrp/build/envsetup.sh
