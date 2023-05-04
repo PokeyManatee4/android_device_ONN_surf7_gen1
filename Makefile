@@ -9,8 +9,8 @@ config:
 	 rm -rf ~/twrp/bootable/recovery 
 	 git clone https://github.com/omnirom/android_bootable_recovery -b android-9.0 --depth 1 ~/twrp/bootable/recovery
 	 rm -rf ~/twrp/build/tools/roomservice.py
-	 wget -q --show-progress --progress=bar:force "$(ROOM_SOURCE)" -O build/tools/roomservice.py 
-	 chmod +x build/tools/roomservice.py
+	 wget -q --show-progress --progress=bar:force "$(ROOM_SOURCE)" -O ~/twrp/build/tools/roomservice.py 
+	 chmod +x ~/twrp/build/tools/roomservice.py
 
 all:
 	cd ~/twrp
