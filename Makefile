@@ -7,6 +7,9 @@ config:
 	 git clone https://github.com/PokeyManatee4/android_device_ONN_surf7_gen1.git ~/twrp/device/ONN/REL
 	 rm -rf ~/twrp/bootable/recovery 
 	 git clone https://github.com/omnirom/android_bootable_recovery -b android-9.0 --depth 1 ~/twrp/bootable/recovery
+	 rm -rf ~/twrp/build/tools/roomservice.py
+	 curl -sL https://gist.github.com/rokibhasansagar/247ddd4ef00dcc9d3340397322051e6a/raw/roomservice_60.py -o build/tools/roomservice.py 
+	 chmod a+x build/tools/roomservice.py
 
 all:
 	cd ~/twrp
