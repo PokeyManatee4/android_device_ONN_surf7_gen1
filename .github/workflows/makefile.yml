@@ -13,9 +13,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    
-    - name: Install
-      run: sudo apt install aria2c
 
     - name: Config
       run: make config && chmod +x docker.sh
