@@ -4,7 +4,7 @@ config:
 	 mkdir ~/twrp
 	 tar -xJf ~/twrp.tar.xz --directory ~/twrp/
 	 rm ~/twrp.tar.xz
-	 git clone https://github.com/PokeyManatee4/android_device_ONN_surf7_gen1.git ~/twrp/device/ONN/REL
+	 git clone https://github.com/PokeyManatee4/android_device_ONN_surf7_gen1.git ~/twrp/device/ONN/ONN
 	 rm -rf ~/twrp/bootable/recovery 
 	 git clone https://github.com/omnirom/android_bootable_recovery -b android-9.0 --depth 1 ~/twrp/bootable/recovery
 
