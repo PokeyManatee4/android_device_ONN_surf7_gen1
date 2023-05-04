@@ -1,4 +1,5 @@
 TWRP_SOURCE = https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.4.0-20201103/MinimalOmniRecovery-twrp-7.1-norepo-20201103.tzst
+ROOM_SOURCE = https://gist.github.com/rokibhasansagar/247ddd4ef00dcc9d3340397322051e6a/raw/roomservice_60.py
 config:
 	 mkdir ~/twrp/
 	 wget -q --show-progress --progress=bar:force "$(TWRP_SOURCE)" -O twrp.tzst
@@ -8,8 +9,8 @@ config:
 	 rm -rf ~/twrp/bootable/recovery 
 	 git clone https://github.com/omnirom/android_bootable_recovery -b android-9.0 --depth 1 ~/twrp/bootable/recovery
 	 rm -rf ~/twrp/build/tools/roomservice.py
-	 curl -sL https://gist.github.com/rokibhasansagar/247ddd4ef00dcc9d3340397322051e6a/raw/roomservice_60.py -o build/tools/roomservice.py 
-	 chmod a+x build/tools/roomservice.py
+	 wget -q --show-progress --progress=bar:force "$(ROOM_SOURCE)" -O build/tools/roomservice.py 
+	 chmod +x build/tools/roomservice.py
 
 all:
 	cd ~/twrp
