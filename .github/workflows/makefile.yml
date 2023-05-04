@@ -23,4 +23,4 @@ jobs:
     - uses: actions/upload-artifact@v3
       with:
         name: Recovery
-        path: ~/out
+        path: ~/twrp/out
