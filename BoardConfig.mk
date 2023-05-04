@@ -66,7 +66,7 @@ TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/root/etc/recovery.fstab
 
 # Architecture
 TARGET_ARCH := arm
-TARGET_ARCH_VARIANT := armv7a
+TARGET_ARCH_VARIANT := armv7-a
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := generic              # Change the value to "generic" if build fails suddenly due to arch error
