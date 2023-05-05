@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     container: 
       image: fr3akyphantom/droid-builder
-      options: --user 1000
+      options: --user 1001
 
     steps:
     - uses: actions/checkout@v3
