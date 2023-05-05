@@ -8,8 +8,8 @@ jobs:
     name: Custom TWRP
     runs-on: ubuntu-latest
     container: 
-      image: fr3akyphantom/droid-builder:latest
-      options: --user 1001
+      image: fr3akyphantom/droid-builder
+      options: --user 1000
 
     steps:
     - uses: actions/checkout@v3
