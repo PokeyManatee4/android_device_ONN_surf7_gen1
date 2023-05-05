@@ -11,7 +11,7 @@ $(call inherit-product, vendor/omni/config/common.mk)
 
 # Replace ${_CODENAME_} with your Device Name's Value.
 # Replace ${_VENDORNAME_} with your Brand's / Manufacturer's Value.
-PRODUCT_COPY_FILES += device/ONN/REL/prebuilt/kernel:kernel
+PRODUCT_COPY_FILES += device/ONN/REL/prebuilt/zImage:zImage
 # Fles under $(LOCAL_PATH)/recovery/root/ gets automatically copied into recovery
 # PRODUCT_COPY_FILES += $(LOCAL_PATH)/recovery/root/*:root/*
 
