@@ -8,6 +8,6 @@ source ~/twrp/build/envsetup.sh
 echo "Lunching"
 lunch omni_REL-eng
 echo "Making"
-make -j$(nproc --all) recoveryimage
+mka recoveryimage
 echo "Done!"
 
