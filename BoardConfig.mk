@@ -53,8 +53,8 @@ TW_EXTRA_LANGUAGES := false
 
 # Kernel
 TARGET_IS_64_BIT := false                      # true/false: Determine if the device is 64-bit or not
-TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/kernel
-TARGET_PREBUILT_RECOVERY_KERNEL := $(LOCAL_PATH)/prebuilt/kernel
+TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/zImage
+TARGET_PREBUILT_RECOVERY_KERNEL := $(LOCAL_PATH)/prebuilt/zImage
 # Get the CMDLine, Base, Pagesize and offsets from Unpacked recovery image and put below
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,32N2 buildvariant=user veritykeyid=id:7e4333f9bba00adfe0ede979e28ed1920492b40f
 BOARD_KERNEL_BASE := 0x40000000
