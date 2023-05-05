@@ -6,7 +6,7 @@ on:
 jobs:
   build:
     name: Custom TWRP
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     container: 
       image: fr3akyphantom/droid-builder
       options: --user 1001
