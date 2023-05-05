@@ -14,6 +14,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
+    - name: Start
+      run: bash
+    
     - name: Config
       run: make config && chmod +x docker.sh
     
