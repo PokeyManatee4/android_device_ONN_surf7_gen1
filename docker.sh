@@ -6,7 +6,7 @@ cd ~/twrp
 echo "Sourcing"
 source ~/twrp/build/envsetup.sh
 echo "Lunching"
-lunch omni_ONN-eng
+lunch omni_ONN-userdebug
 echo "Making"
 mka recoveryimage
 echo "Done!"
