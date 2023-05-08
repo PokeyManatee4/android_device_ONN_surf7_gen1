@@ -3,10 +3,10 @@
 echo "Starting"
 cd ~/twrp
 echo "Sourcing"
-source ~/twrp/build/envsetup.sh
+source build/envsetup.sh
 echo "Lunching"
-lunch omni_ONN-eng
+lunch omni_REL-eng
 echo "Making"
-mka recoveryimage
+make -j$(nproc --all) recoveryimage
 echo "Done!"
 
