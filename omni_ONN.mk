@@ -6,7 +6,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/embedded.mk)
 
 $(call inherit-product, vendor/omni/config/common.mk)
 
-PRODUCT_COPY_FILES += device/ONN/REL/prebuilt/zImage
+PRODUCT_COPY_FILES += device/ONN/REL/prebuilt/kernel:kernel
 
 PRODUCT_DEVICE := REL
 PRODUCT_NAME := omni_ONN
