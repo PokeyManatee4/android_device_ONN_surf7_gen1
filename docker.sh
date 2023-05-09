@@ -7,6 +7,7 @@ source ~/twrp/build/envsetup.sh
 echo "Lunching"
 lunch omni_ONN-eng
 echo "Making"
+export ALLOW_MISSING_DEPENDENCIES=true
 mka recoveryimage
 echo "Done!"
 
