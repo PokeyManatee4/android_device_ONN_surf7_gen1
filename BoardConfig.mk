@@ -8,6 +8,8 @@ TARGET_BOOTLOADER_BOARD_NAME := mid7015_mk_32
 BOARD_USES_MTK_HARDWARE := true
 BOARD_HAS_MTK_HARDWARE := true
 
+ALLOW_MISSING_DEPENDENCIES := true
+
 # Recovery
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true            # To add info about F2FS Filesystem Data Block
