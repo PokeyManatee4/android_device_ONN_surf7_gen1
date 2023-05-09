@@ -10,23 +10,21 @@ BOARD_HAS_MTK_HARDWARE := true
 
 # Recovery
 TARGET_USERIMAGES_USE_EXT4 := true
-TARGET_USERIMAGES_USE_F2FS := true            # To add info about F2FS Filesystem Data Block
+TARGET_USERIMAGES_USE_F2FS := false            # To add info about F2FS Filesystem Data Block
 # Put The Size of your Recovery Partition below, get it from your "MT****_Android_scatter.txt"
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 1000000
-# BOARD_USES_FULL_RECOVERY_IMAGE := true      # Uncomment this line if you want to remove size restriction
 BOARD_FLASH_BLOCK_SIZE := 0                   # Might be different for your chip
 BOARD_HAS_NO_REAL_SDCARD := true              # Depricated
-# BOARD_HAS_NO_SELECT_BUTTON := true          # Depricated
 BOARD_SUPPRESS_SECURE_ERASE := true
 BOARD_HAS_NO_MISC_PARTITION := true           # Delete if your partition table has /misc
 BOARD_RECOVERY_SWIPE := true
-BOARD_USES_MMCUTILS := true
+BOARD_USES_MMCUTILS := false
 BOARD_SUPPRESS_EMMC_WIPE := true
 BOARD_CHARGER_SHOW_PERCENTAGE := true
 RECOVERY_SDCARD_ON_DATA := true               # Optional: If /sdcard partition is emulated on /data partition 
 
 # TWRP stuff
-TW_EXCLUDE_SUPERSU := false                   # true/false: Add SuperSU or not
+TW_EXCLUDE_SUPERSU := true                   # true/false: Add SuperSU or not
 TW_INCLUDE_CRYPTO := true                     # true/false: Add Data Encryption Support or not
 TW_INPUT_BLACKLIST := "hbtp_vm"               # Optional: Disables virtual mouse
 TW_SCREEN_BLANK_ON_BOOT := false
@@ -47,7 +45,7 @@ TW_DEFAULT_BRIGHTNESS := 80                   # Set custom brightness, low is be
 TW_INCLUDE_NTFS_3G := false                   # Include NTFS Filesystem Support
 TW_INCLUDE_FUSE_EXFAT := false              # Include Fuse-ExFAT Filesystem Support
 TWRP_INCLUDE_LOGCAT := true                   # Include LogCat Binary
-TW_INCLUDE_FB2PNG := false                     # Include Screenshot Support
+TW_INCLUDE_FB2PNG := true                     # Include Screenshot Support
 TW_DEFAULT_LANGUAGE := en                     # Set Default Language 
 TW_EXTRA_LANGUAGES := false
 
