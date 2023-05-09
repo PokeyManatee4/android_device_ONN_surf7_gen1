@@ -28,6 +28,7 @@ TW_EXCLUDE_SUPERSU := false                   # true/false: Add SuperSU or not
 TW_INCLUDE_CRYPTO := true                     # true/false: Add Data Encryption Support or not
 TW_INPUT_BLACKLIST := "hbtp_vm"               # Optional: Disables virtual mouse
 TW_SCREEN_BLANK_ON_BOOT := false
+TW_USE_TOOLBOX := true
 TW_THEME := portrait_hdpi                    # Set the exact theme you wanna use. If resulation doesn't match, define the height/width
 DEVICE_RESOLUTION := 1024x600                # The Resolution of your Device
 TARGET_SCREEN_HEIGHT := 1024                    # The height
