@@ -7,7 +7,7 @@ ROOM_SOURCE = https://gist.github.com/rokibhasansagar/247ddd4ef00dcc9d3340397322
 config:
 	 mkdir ~/twrp/
 	 wget -q --show-progress --progress=bar:force "$(TWRP_SOURCE1)" "$(TWRP_SOURCE2)" "$(TWRP_SOURCE3)" "$(TWRP_SOURCE4)"
-	 tar --zstd -xf MinimalOmniRecovery-twrp-*.*-norepo-2020*.tzst.aa --directory ~/twrp/
+	 tar --zstd -xf MinimalOmniRecovery-twrp-*.*-norepo-2020*.tzst.a* --directory ~/twrp
 	 rm MinimalOmniRecovery*.tzst.*
 	 git clone https://github.com/PokeyManatee4/android_device_ONN_surf7_gen1 ~/twrp/device/ONN/REL
 	 rm -rf ~/twrp/bootable/recovery 
