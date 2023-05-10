@@ -1,14 +1,44 @@
 [
+{
+    "remote":      "github",
+    "repository":  "TeamWin/android_bootable_recovery",
+    "target_path": "bootable/recovery",
+    "revision":    "android-9.0"
+  },
+  {
+    "remote":      "github",
+    "repository":  "TeamWin/android_external_icu",
+    "target_path": "external/icu",
+    "revision":    "android-12"
+  },
+  {
+    "remote":      "github",
+    "repository":  "TeamWin/android_external_sepolicy",
+    "target_path": "external/sepolicy",
+    "revision":    "android-6.0"
+  },
+  {
+    "remote":      "github",
+    "repository":  "TeamWin/f2fs-tools",
+    "target_path": "external/f2fs-tools",
+    "revision":    "android-10"
+  },
+  {
+    "remote":      "github",
+    "repository":  "TeamWin/boringssl",
+    "target_path": "external/boringssl",
+    "revision":    "android-8.1"
+  },
   {
     "remote":      "github",
     "repository":  "TeamWin/android_external_busybox",
     "target_path": "external/busybox",
     "revision":    "android-9.0"
   },
-{
+  {
     "remote":      "github",
-    "repository":  "TeamWin/android_bootable_recovery",
-    "target_path": "bootable/recovery",
-    "revision":    "android-9.0"
+    "repository":  "TeamWin/unzip",
+    "target_path": "external/unzip",
+    "revision":    "cm-14.1"
   }
 ]
