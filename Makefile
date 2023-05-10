@@ -7,8 +7,13 @@ config:
 	 tar --zstd -xf twrp.tzst --directory ~/twrp/ 
 	 rm twrp.tzst -rf
 	 git clone https://github.com/PokeyManatee4/android_device_ONN_surf7_gen1 ~/twrp/device/ONN/REL
-	 rm ~/twrp/bootable/recovery -rf 
-	 rm ~/twrp/build/tools/roomservice.py -rf
+	 rm ~/twrp/bootable/recovery -rf
+	 rm ~/twrp/external/icu -rf
+	 rm ~/twrp/external/sepolicy -rf
+	 rm ~/twrp/external/f2fs-tools -rf
+	 rm ~/twrp/external/boringssl -rf
 	 rm ~/twrp/external/busybox/ -rf
+	 rm ~/twrp/external/unzip/ -rf
+	 rm ~/twrp/build/tools/roomservice.py -rf
 	 wget -q --show-progress --progress=bar:force "$(ROOM_SOURCE)" -O ~/twrp/build/tools/roomservice.py 
 	 chmod +x ~/twrp/build/tools/roomservice.py
