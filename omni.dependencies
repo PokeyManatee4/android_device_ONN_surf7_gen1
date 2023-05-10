@@ -4,5 +4,11 @@
     "repository":  "TeamWin/android_external_busybox",
     "target_path": "external/busybox",
     "revision":    "android-9.0"
+  },
+{
+    "remote":      "github",
+    "repository":  "TeamWin/android_bootable_recovery",
+    "target_path": "bootable/recovery",
+    "revision":    "android-9.0"
   }
 ]
