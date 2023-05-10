@@ -8,12 +8,9 @@ config:
 	 rm twrp.tzst -rf
 	 git clone https://github.com/PokeyManatee4/android_device_ONN_surf7_gen1 ~/twrp/device/ONN/REL
 	 rm ~/twrp/bootable/recovery -rf
-	 rm ~/twrp/external/icu -rf
-	 rm ~/twrp/external/sepolicy -rf
-	 rm ~/twrp/external/f2fs-tools -rf
-	 rm ~/twrp/external/boringssl -rf
+	 git clone https://github.com/omnirom/android_bootable_recovery -b android-9.0 --depth 1 ~/twrp/bootable/recovery
 	 rm ~/twrp/external/busybox/ -rf
-	 rm ~/twrp/external/unzip/ -rf
+	 git clone https://github.com/TeamWin/android_external_busybox -b android-9.0 --depth 1 ~/twrp/external/busybox
 	 rm ~/twrp/build/tools/roomservice.py -rf
 	 wget -q --show-progress --progress=bar:force "$(ROOM_SOURCE)" -O ~/twrp/build/tools/roomservice.py 
 	 chmod +x ~/twrp/build/tools/roomservice.py
