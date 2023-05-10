@@ -3,7 +3,7 @@ ROOM_SOURCE = https://gist.github.com/rokibhasansagar/247ddd4ef00dcc9d3340397322
 
 config:
 	 mkdir ~/twrp/
-	 wget -q --show-progress --progress=bar:force "$(TWRP_SOURCE)"
+	 wget -q --show-progress --progress=bar:force "$(TWRP_SOURCE)" -O twrp.tzst
 	 tar --zstd -xf twrp.tzst --directory ~/twrp/ 
 	 rm twrp.tzst -rf
 	 git clone https://github.com/PokeyManatee4/android_device_ONN_surf7_gen1 ~/twrp/device/ONN/REL
