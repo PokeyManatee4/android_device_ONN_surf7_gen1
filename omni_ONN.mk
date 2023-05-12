@@ -4,7 +4,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_minimal.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/embedded.mk)
 
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+
 $(call inherit-product, vendor/omni/config/common.mk)
+
+
+$(call inherit-product, device/ONN/REL/device.mk)
 
 PRODUCT_COPY_FILES += device/ONN/REL/prebuilt/zImage:kernel
 
