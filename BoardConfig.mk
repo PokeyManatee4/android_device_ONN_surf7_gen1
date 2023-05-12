@@ -17,7 +17,7 @@ OVERRIDE_TARGET_FLATTEN_APEX := true
 
 # Recovery
 TARGET_USERIMAGES_USE_EXT4 := true
-TARGET_USERIMAGES_USE_F2FS := false            # To add info about F2FS Filesystem Data Block
+TARGET_USERIMAGES_USE_F2FS := true      # To add info about F2FS Filesystem Data Block
 # Put The Size of your Recovery Partition below, get it from your "MT****_Android_scatter.txt"
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 1000000
 BOARD_FLASH_BLOCK_SIZE := 0                   # Might be different for your chip
