@@ -1,0 +1,1 @@
+LOCAL_PATH := device/ONN/REL
