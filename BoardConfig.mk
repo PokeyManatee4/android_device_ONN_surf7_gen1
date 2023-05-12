@@ -78,7 +78,7 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/zImage:kernel
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/zImage-dtbo
-BOARD_KERNEL_SEPARATED_DTBO := 
+
 
 
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/root/etc/recovery.fstab
