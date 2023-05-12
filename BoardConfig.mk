@@ -10,6 +10,11 @@ BOARD_HAS_MTK_HARDWARE := true
 
 ALLOW_MISSING_DEPENDENCIES := true
 
+TARGET_USES_64_BIT_BINDER := true
+
+
+OVERRIDE_TARGET_FLATTEN_APEX := true
+
 # Recovery
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := false            # To add info about F2FS Filesystem Data Block
@@ -67,8 +72,9 @@ TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/root/etc/recovery.fstab
 
 # Architecture
 TARGET_ARCH := arm
-TARGET_ARCH_VARIANT := armv7-a
+TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := generic
+TARGET_CPU_VARIANT_RUNTIME := generic
 TARGET_CPU_ABI_LIST := $(TARGET_CPU_ABI),$(TARGET_CPU_ABI2)
