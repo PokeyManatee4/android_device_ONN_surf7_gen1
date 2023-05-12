@@ -31,11 +31,11 @@ BOARD_CHARGER_SHOW_PERCENTAGE := true
 RECOVERY_SDCARD_ON_DATA := true               # Optional: If /sdcard partition is emulated on /data partition 
 
 # TWRP stuff
-TW_EXCLUDE_SUPERSU := false                   # true/false: Add SuperSU or not
+TW_EXCLUDE_SUPERSU := true                   # true/false: Add SuperSU or not
 TW_INCLUDE_CRYPTO := true                     # true/false: Add Data Encryption Support or not
 TW_INPUT_BLACKLIST := "hbtp_vm"               # Optional: Disables virtual mouse
 TW_SCREEN_BLANK_ON_BOOT := false
-TW_USE_TOOLBOX := false
+TW_USE_TOOLBOX := true
 TW_THEME := portrait_hdpi                    # Set the exact theme you wanna use. If resulation doesn't match, define the height/width
 DEVICE_RESOLUTION := 1024x600                # The Resolution of your Device
 TARGET_SCREEN_HEIGHT := 1024                    # The height
@@ -59,8 +59,6 @@ TW_EXTRA_LANGUAGES := true
 
 # Kernel
 TARGET_SCREEN_DENSITY := 160
-
-# Kernel
 BOARD_BOOTIMG_HEADER_VERSION := 1
 BOARD_KERNEL_BASE := 0x40000000
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,32N2 buildvariant=user veritykeyid=id:7e4333f9bba00adfe0ede979e28ed1920492b40f
@@ -72,15 +70,8 @@ BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_SEPARATED_DTBO := true
-
-
-
-
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/zImage:kernel
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/zImage-dtbo
-
-
-
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/root/etc/recovery.fstab
 
 VENDOR_SECURITY_PATCH := 2021-08-01
@@ -88,7 +79,7 @@ VENDOR_SECURITY_PATCH := 2021-08-01
 
 PLATFORM_SECURITY_PATCH := 2099-12-31
 VENDOR_SECURITY_PATCH := 2099-12-31
-PLATFORM_VERSION := 16.1.0
+PLATFORM_VERSION := 9.0.0
 
 # Architecture
 TARGET_ARCH := arm
@@ -97,4 +88,3 @@ TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := generic
 TARGET_CPU_VARIANT_RUNTIME := generic
-TARGET_CPU_ABI_LIST := $(TARGET_CPU_ABI),$(TARGET_CPU_ABI2)
