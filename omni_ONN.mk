@@ -12,7 +12,7 @@ $(call inherit-product, vendor/omni/config/common.mk)
 
 $(call inherit-product, device/ONN/REL/device.mk)
 
-PRODUCT_COPY_FILES += device/ONN/REL/prebuilt/zImage:kernel
+PRODUCT_COPY_FILES += device/ONN/REL/prebuilt/zImage:zImage
 
 PRODUCT_DEVICE := REL
 PRODUCT_NAME := omni_ONN
