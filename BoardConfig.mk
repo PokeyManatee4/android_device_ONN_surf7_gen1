@@ -33,14 +33,10 @@ TW_INPUT_BLACKLIST := "hbtp_vm"               # Optional: Disables virtual mouse
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_USE_TOOLBOX := true
 TW_THEME := portrait_hdpi                    # Set the exact theme you wanna use. If resulation doesn't match, define the height/width
-DEVICE_RESOLUTION := 1024x600                # The Resolution of your Device
 TARGET_SCREEN_HEIGHT := 1024                    # The height
 TARGET_SCREEN_WIDTH := 600                      # The width
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
-TW_SECONDARY_BRIGHTNESS_PATH := /sys/devices/platform/leds-mt8167/leds/lcd-backlight/brightness
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/musb-hdrc.0.auto/gadget/lun/file
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun/file
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 80                   # Set custom brightness, low is better
 
