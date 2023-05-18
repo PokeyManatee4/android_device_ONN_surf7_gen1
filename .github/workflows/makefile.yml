@@ -9,14 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: fr3akyphantom/droid-builder:latest
-      options: --user 1001
-
+      options: --user 1002
+      
     steps:
-      uses: actions/checkout@v3
+    - uses: actions/checkout@v3
       
     - name: Start
       run: mkdir /srv/ccache/tmp && chmod 755 /srv/ccache/tmp
-    
+      
     - name: Config
       run: make config && chmod +x docker.sh
     
