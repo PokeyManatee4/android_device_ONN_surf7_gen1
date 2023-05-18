@@ -60,8 +60,8 @@ BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_KERNEL_IMAGE_NAME := zImage
 BOARD_KERNEL_SEPARATED_DTBO := true
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/zImage:zImage
-BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/zImage-dtbo
+TARGET_PREBUILT_KERNEL := device/ONN/REL/prebuilt/zImage:zImage
+BOARD_PREBUILT_DTBOIMAGE := device/ONN/REL/prebuilt/zImage-dtbo
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/root/etc/recovery.fstab
 
 # Architecture
