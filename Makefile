@@ -1,4 +1,4 @@
-TWRP_SOURCE = https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.4.0-20201103/MinimalOmniRecovery-twrp-5.1-norepo-20201103.tzst
+TWRP_SOURCE = https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.4.0-20201103/MinimalOmniRecovery-twrp-6.0-norepo-20201103.tzst
 ROOM_SOURCE = https://gist.github.com/PokeyManatee4/5284be7d5adba0b088b2e33cd63ecbb2/raw/roomservice_100.py
 
 config:
