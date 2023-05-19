@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "Starting"
+sudo chmod 755 -R ~/twrp
 cd ~/twrp
 echo "Sourcing"
 source ~/twrp/build/envsetup.sh
