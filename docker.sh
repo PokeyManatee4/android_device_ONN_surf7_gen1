@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 echo "Starting"
 sudo chmod 755 -R ~/twrp
