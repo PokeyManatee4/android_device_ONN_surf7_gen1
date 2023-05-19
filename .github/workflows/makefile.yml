@@ -15,7 +15,7 @@ jobs:
       run: docker pull fr3akyphantom/droid-builder:latest && make config && chmod +x docker.sh
     
     - name: Build
-      run: docker run --rm -i -e USER_ID=$(id -u) -e GROUP_ID=$(id -g) -v "$(pwd):/home/builder/twrp/:rw,z" -v "/home/runner/.ccache:/srv/ccache:rw,z" fr3akyphantom/droid-builder ls ~ #./~/twrp/device/ONN/REL/docker.sh
+      run: docker run --rm -i -e USER_ID=$(id -u) -e GROUP_ID=$(id -g) -v "$(pwd):/home/builder/twrp/:rw,z" -v "/home/builder/.ccache:/srv/ccache:rw,z" fr3akyphantom/droid-builder ls ~ #./~/twrp/device/ONN/REL/docker.sh
 
     - uses: actions/upload-artifact@v3
       with:
