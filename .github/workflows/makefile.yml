@@ -12,10 +12,10 @@ jobs:
     - uses: actions/checkout@v3
       
     - name: Config
-      run: sudo apt update && sudo apt install openjdk-8-jdk-headless -y && make config && chmod +x docker.sh
+      run: docker pull fr3akyphantom/droid-builder:latest && sudo apt install openjdk-8-jdk-headless -y && make config && chmod +x docker.sh
     
     - name: Build
-      run: ./docker.sh
+      run: docker run --rm -i -e USER_ID=$(id -u) -e GROUP_ID=$(id -g) -v "$(pwd):/home/runner/twrp/:rw,z" -v "/home/runner/.ccache:/srv/ccache:rw,z" fr3akyphantom/droid-builder ./docker.sh
 
     - uses: actions/upload-artifact@v3
       with:
