@@ -1,7 +1,6 @@
 #!/bin/bash
 
 echo "Starting"
-mkdir /srv/ccache/tmp
 chmod 755 /srv/ccache/tmp
 cd ~/twrp
 echo "Sourcing"
