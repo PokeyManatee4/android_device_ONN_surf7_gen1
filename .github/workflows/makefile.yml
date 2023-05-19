@@ -15,7 +15,7 @@ jobs:
       run: docker pull fr3akyphantom/droid-builder:latest && make config && chmod 755 docker.sh && chmod 755 ~/twrp
     
     - name: Build
-      run: cd ~/twrp && docker run --rm -i -v "$(pwd):/home/runner/twrp/:rw,z" -v "${HOME}/.ccache:/srv/ccache:rw,z" fr3akyphantom/droid-builder bash /home/runner/twrp/device/ONN/REL/docker.sh
+      run: cd ~/twrp && docker run --rm -i -v "$(pwd):/home/runner/twrp/:rw,z" -v "${HOME}/.ccache:/srv/ccache:rw,z" fr3akyphantom/droid-builder sudo bash /home/runner/twrp/device/ONN/REL/docker.sh
 
     - uses: actions/upload-artifact@v3
       with:
