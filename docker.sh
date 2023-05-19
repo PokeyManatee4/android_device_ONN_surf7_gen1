@@ -1,7 +1,6 @@
 #!/bin/bash
 
 echo "Starting"
-chmod 755 /srv/ccache/tmp
 cd ~/twrp
 echo "Sourcing"
 source ~/twrp/build/envsetup.sh
