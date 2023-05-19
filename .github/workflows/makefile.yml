@@ -15,7 +15,7 @@ jobs:
       run: docker pull fr3akyphantom/droid-builder:latest && make config && chmod +x docker.sh
     
     - name: Build
-      run: docker run fr3akyphantom/droid-builder:latest -w /home/runner ./docker.sh
+      run: ./docker.sh #docker run fr3akyphantom/droid-builder:latest -w /home/runner ./docker.sh
 
     - uses: actions/upload-artifact@v3
       with:
