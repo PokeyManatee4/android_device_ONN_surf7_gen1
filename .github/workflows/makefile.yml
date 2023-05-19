@@ -15,7 +15,7 @@ jobs:
       run: make config && chmod +x docker.sh
     
     - name: Build
-      run: docker run fr3akyphantom/droid-builder:latest ./docker.sh
+      run: docker run fr3akyphantom/droid-builder:latest ls #./docker.sh
 
     - uses: actions/upload-artifact@v3
       with:
