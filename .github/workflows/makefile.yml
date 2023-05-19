@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: fr3akyphantom/droid-builder:latest
-      options: --user 1001 -v "~/.ccache:/srv/ccache:rw,z"
+      options: --user 1001 -v "/home/runner/.ccache:/srv/ccache:rw,z"
       
     steps:
     - uses: actions/checkout@v3
