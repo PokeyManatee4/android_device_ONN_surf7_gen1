@@ -1,10 +1,9 @@
 #!/bin/sh
 
 echo "Starting"
-sudo chmod 755 -R ~/twrp
-cd ~/twrp
+cd /home/runner/twrp
 echo "Sourcing"
-source ~/twrp/build/envsetup.sh
+source /home/runner/twrp/build/envsetup.sh
 echo "Lunching"
 export ALLOW_MISSING_DEPENDENCIES=true
 lunch omni_ONN-eng
