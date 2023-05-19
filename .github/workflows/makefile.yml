@@ -12,10 +12,10 @@ jobs:
     - uses: actions/checkout@v3
       
     - name: Config
-      run: docker pull fr3akyphantom/droid-builder:latest && make config && chmod +x docker.sh
+      run: docker pull fr3akyphantom/droid-builder:latest && make config && chmod a+x docker.sh
     
     - name: Build
-      run: cd ~/twrp && docker run --rm -i -e USER_ID=$(id -u) -e GROUP_ID=$(id -g) -v "$(pwd):/home/runner/twrp/:rw,z" -v "${HOME}/.ccache:/srv/ccache:rw,z" fr3akyphantom/droid-builder ./~/twrp/device/ONN/REL/docker.sh
+      run: cd ~/twrp && docker run --rm -i -e USER_ID=$(id -u) -e GROUP_ID=$(id -g) -v "$(pwd):/home/runner/twrp/:rw,z" -v "${HOME}/.ccache:/srv/ccache:rw,z" fr3akyphantom/droid-builder cat ./~/twrp/device/ONN/REL/docker.sh
 
     - uses: actions/upload-artifact@v3
       with:
