@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v3
       
     - name: Start
-      run: chmod 755 /srv/ccache/
+      run: sudo chmod 755 /srv/ccache/
       
     - name: Config
       run: make config && chmod +x docker.sh
