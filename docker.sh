@@ -8,6 +8,6 @@ echo "Lunching"
 export ALLOW_MISSING_DEPENDENCIES=true
 lunch omni_ONN-eng
 echo "Making"
-mka recoveryimage
+make recoveryimage
 echo "Done!"
 
