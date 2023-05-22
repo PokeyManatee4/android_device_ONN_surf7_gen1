@@ -8,5 +8,5 @@ echo "Lunching"
 
 lunch omni_ONN-eng
 echo "Making"
-export ALLOW_MISSING_DEPENDENCIES=true && mka recoveryimage
+export ALLOW_MISSING_DEPENDENCIES=true && make recoveryimage -j$(nproc)
 
