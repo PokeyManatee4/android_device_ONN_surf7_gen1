@@ -9,6 +9,4 @@ config:
 	 git clone https://github.com/PokeyManatee4/android_device_ONN_surf7_gen1 ~/twrp/device/ONN/REL
 	 rm ~/twrp/bootable/recovery -rf
 	 git clone https://github.com/omnirom/android_bootable_recovery -b android-9.0 --depth 1 ~/twrp/bootable/recovery
-	 rm ~/twrp/build/tools/roomservice.py -rf
-	 wget -q --show-progress --progress=bar:force "$(ROOM_SOURCE)" -O ~/twrp/build/tools/roomservice.py 
-	 chmod +x ~/twrp/build/tools/roomservice.py
+	 git clone https://github.com/TeamWin/android_external_busybox -b android-9.0 --depth 1 ~/twrp/external/busybox
