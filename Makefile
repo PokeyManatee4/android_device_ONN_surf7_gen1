@@ -1,4 +1,4 @@
-TWRP_SOURCE = https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.4.0-20201108/MinimalOmniRecovery-twrp-7.1-norepo-20201108.tzst
+TWRP_SOURCE = https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.4.0-20201103/MinimalOmniRecovery-twrp-5.1-norepo-20201103.tzst
 
 config:
 	 mkdir ~/twrp/
