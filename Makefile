@@ -7,6 +7,4 @@ config:
 	 rm twrp.tzst -rf
 	 git clone https://github.com/PokeyManatee4/android_device_ONN_surf7_gen1 ~/twrp/device/ONN/REL
 	 rm ~/twrp/bootable/recovery -rf
-	 rm ~/twrp/external/busybox -rf
 	 git clone https://github.com/omnirom/android_bootable_recovery -b android-9.0 ~/twrp/bootable/recovery
-	 git clone https://github.com/TeamWin/android_external_busybox -b android-9.0 ~/twrp/external/busybox
