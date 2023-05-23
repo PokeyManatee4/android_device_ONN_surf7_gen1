@@ -57,6 +57,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x15000000 --second_offset 0x00f00000 -
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/root/etc/recovery.fstab
 
 TARGET_USES_64_BIT_BINDER := true
+BOARD_HAS_FLIPPED_SCREEN := true
 
 VENDOR_SECURITY_PATCH := 2021-08-01
 
