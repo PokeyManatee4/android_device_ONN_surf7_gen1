@@ -52,7 +52,7 @@ BOARD_KERNEL_CMDLINE :=  bootopt=64S3,32N2,32N2 buildvariant=user veritykeyid=id
 BOARD_KERNEL_BASE := 0x40000000
 BOARD_HEADER_VERSION := 1
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x15000000 --second_offset 0x00f00000 --tags_offset 0x14000000
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x15000000 --second_offset 0x00f00000 --tags_offset 0x14000000 --cmdline $(BOARD_KERNEL_CMDLINE) --board $(TARGET_BOOTLOADER_BOARD_NAME) --pagesize  $(BOARD_KERNEL_PAGESIZE)
 
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/root/etc/recovery.fstab
 
