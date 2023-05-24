@@ -19,5 +19,5 @@ jobs:
 
     - uses: actions/upload-artifact@v3
       with:
-        name: Recovery
+        name: recovery.img
         path: ~/twrp/out/target/product/REL/recovery.img
