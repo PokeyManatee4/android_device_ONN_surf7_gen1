@@ -9,9 +9,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 $(call inherit-product, vendor/omni/config/common.mk)
 
-
-
-
 PRODUCT_COPY_FILES += device/ONN/REL/prebuilt/zImage:zImage
 
 PRODUCT_DEVICE := REL
