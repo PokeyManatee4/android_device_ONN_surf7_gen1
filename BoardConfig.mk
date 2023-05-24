@@ -34,7 +34,7 @@ TW_INCLUDE_CRYPTO := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_SCREEN_BLANK_ON_BOOT := false
 TW_USE_TOOLBOX := true
-TW_THEME := landscape_hdpi
+TW_THEME := portrait_hdpi
 
 TARGET_SCREEN_HEIGHT := 1024
 TARGET_SCREEN_WIDTH := 600
