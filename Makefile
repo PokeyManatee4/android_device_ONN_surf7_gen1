@@ -9,7 +9,7 @@ config:
 	 wget -q --show-progress --progress=bar:force "$(TWRP_SOURCE1)" "$(TWRP_SOURCE2)" "$(TWRP_SOURCE3)" "$(TWRP_SOURCE4)"
          tar --zstd -xf MinimalOmniRecovery-twrp-* -directory /home/runner/twrp && rm MinimalOmniRecovery*
 	
-script:
+
 	 git clone https://github.com/PokeyManatee4/android_device_ONN_surf7_gen1 ~/twrp/device/ONN/REL
 	 rm ~/twrp/bootable/recovery -rf
 	 rm ~/twrp/build/tools/roomservice.py -rf
