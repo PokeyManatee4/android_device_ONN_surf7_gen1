@@ -1,8 +1,8 @@
- TWRP_SOURCE1 = https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.4.0-20201103/MinimalOmniRecovery-twrp-9.0-norepo-20201103.tzst.aa
- TWRP_SOURCE2 = https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.4.0-20201103/MinimalOmniRecovery-twrp-9.0-norepo-20201103.tzst.ab
- TWRP_SOURCE3 = https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.4.0-20201103/MinimalOmniRecovery-twrp-9.0-norepo-20201103.tzst.ac
- TWRP_SOURCE4 = https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.4.0-20201103/MinimalOmniRecovery-twrp-9.0-norepo-20201103.tzst.ad
- ROOM_SOURCE = https://gist.github.com/rokibhasansagar/247ddd4ef00dcc9d3340397322051e6a/raw/roomservice_90.py
+TWRP_SOURCE1 = https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.4.0-20201103/MinimalOmniRecovery-twrp-9.0-norepo-20201103.tzst.aa
+TWRP_SOURCE2 = https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.4.0-20201103/MinimalOmniRecovery-twrp-9.0-norepo-20201103.tzst.ab
+TWRP_SOURCE3 = https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.4.0-20201103/MinimalOmniRecovery-twrp-9.0-norepo-20201103.tzst.ac
+TWRP_SOURCE4 = https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.4.0-20201103/MinimalOmniRecovery-twrp-9.0-norepo-20201103.tzst.ad
+ROOM_SOURCE = https://gist.github.com/rokibhasansagar/247ddd4ef00dcc9d3340397322051e6a/raw/roomservice_90.py
 
 config:
 	 mkdir ~/twrp/
