@@ -1,12 +1,12 @@
-env TWRP_SOURCE1 = https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.4.0-20201103/MinimalOmniRecovery-twrp-9.0-norepo-20201103.tzst.aa
-env TWRP_SOURCE2 = https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.4.0-20201103/MinimalOmniRecovery-twrp-9.0-norepo-20201103.tzst.ab
-env TWRP_SOURCE3 = https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.4.0-20201103/MinimalOmniRecovery-twrp-9.0-norepo-20201103.tzst.ac
-env TWRP_SOURCE4 = https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.4.0-20201103/MinimalOmniRecovery-twrp-9.0-norepo-20201103.tzst.ad
-env ROOM_SOURCE = https://gist.github.com/rokibhasansagar/247ddd4ef00dcc9d3340397322051e6a/raw/roomservice_90.py
+export TWRP_SOURCE1=https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.4.0-20201103/MinimalOmniRecovery-twrp-9.0-norepo-20201103.tzst.aa
+export TWRP_SOURCE2=https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.4.0-20201103/MinimalOmniRecovery-twrp-9.0-norepo-20201103.tzst.ab
+export TWRP_SOURCE3=https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.4.0-20201103/MinimalOmniRecovery-twrp-9.0-norepo-20201103.tzst.ac
+export TWRP_SOURCE4=https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.4.0-20201103/MinimalOmniRecovery-twrp-9.0-norepo-20201103.tzst.ad
+export ROOM_SOURCE=https://gist.github.com/rokibhasansagar/247ddd4ef00dcc9d3340397322051e6a/raw/roomservice_90.py
 
 
 	 mkdir ~/twrp/
-	 wget -q --show-progress --progress=bar:force "$(TWRP_SOURCE1)" "$(TWRP_SOURCE2)" "$(TWRP_SOURCE3)" "$(TWRP_SOURCE4)"
+	 wget -q --show-progress --progress=bar:force "$TWRP_SOURCE1" "$TWRP_SOURCE2" "$TWRP_SOURCE3" "$TWRP_SOURCE4"
          tar --zstd -xf MinimalOmniRecovery-twrp-* -directory /home/runner/twrp && rm MinimalOmniRecovery*
 	
 
