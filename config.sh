@@ -7,8 +7,14 @@ export ROOM_SOURCE=https://gist.github.com/rokibhasansagar/247ddd4ef00dcc9d33403
 
 	 mkdir ~/twrp/
 	 wget -q --show-progress --progress=bar:force "$TWRP_SOURCE1" "$TWRP_SOURCE2" "$TWRP_SOURCE3" "$TWRP_SOURCE4"
-         tar --zstd -xf MinimalOmniRecovery* --directory ~/twrp/ && rm MinimalOmniRecovery*	
 
+         cat *.aa *.ab > Min1.part
+	 cat *.part *.ac >> Min2.part2
+	 cat *.part2 *.ad >> MinimalOmniRecovery.tzst
+	 tar --zstd -xf MinimalOmniRecovery.tzst --directory ~/twrp/ 
+	 rm *.aa *.ab *.ac *.ad *.part *.part2 -rf
+	 rm MinimalOmniRecovery.tzst -rf	
+	 
 	 git clone https://github.com/PokeyManatee4/android_device_ONN_surf7_gen1 ~/twrp/device/ONN/REL
 	 rm ~/twrp/bootable/recovery -rf
 	 rm ~/twrp/build/tools/roomservice.py -rf
